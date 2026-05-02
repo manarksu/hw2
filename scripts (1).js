@@ -1,11 +1,6 @@
-// ============================================================
-// HW4: JavaScript & DOM Interactivity
-// ============================================================
 
-// ============================================================
-// 1. HOMEPAGE (index.html)
-// Requirement 5: Dynamically add a "Page loaded on:" element to footer
-// ============================================================
+// HOMEPAGE 
+
 window.onload = function () {
   var footer = document.querySelector("footer");
   if (footer) {
@@ -20,10 +15,10 @@ window.onload = function () {
   }
 };
 
-// ============================================================
-// 2. CONTACT PAGE (contact.html)
-// Requirement 2: Form validation on submit
-// ============================================================
+
+// (contact.html)
+// Form validation on submit
+
 var contactForm = document.getElementById("contact-form");
 if (contactForm) {
   contactForm.onsubmit = function (event) {
@@ -50,10 +45,9 @@ if (contactForm) {
   };
 }
 
-// ============================================================
-// 3. PROJECTS PAGE (projects.html)
-// Requirement 3: Toggle project description visibility
-// ============================================================
+//  (projects.html)
+//  Toggle project description visibility
+
 function toggleDescription(buttonEl) {
   // The button is inside an <article>; find the <p> inside the same article
   var article = buttonEl.parentElement;
@@ -93,10 +87,10 @@ function toggleDescription(buttonEl) {
   });
 })();
 
-// ============================================================
-// 4. CV PAGE (cv.html)
+
+// (cv.html)
 // Requirement 4: Mouse hover effects on <blockquote>
-// ============================================================
+
 (function setupBlockquoteHover() {
   var blockquotes = document.querySelectorAll("blockquote");
   blockquotes.forEach(function (bq) {
